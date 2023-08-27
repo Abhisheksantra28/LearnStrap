@@ -1,0 +1,963 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding--inline--section: 1.2rem;
+    --padding--NavBar: 0 8rem;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+    position: relative;
+}
+
+h1{
+   font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.2rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+li{
+    list-style: none;
+}
+
+
+.container{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* nav bar  start*/
+
+.navContainer{
+    width: 100%;
+    height: 80px;
+    /* background-color:#F7F8FC; */
+    background-color: #fff4f1;
+    background-image: linear-gradient(149deg, #fff4f1 50%, #ffffff 100%);  
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: var(--padding--NavBar); 
+    border-bottom: 2px solid #dadada;
+
+
+    /* changes */
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    
+}
+
+
+#navList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navList li h2{
+    font-size: 2.8rem;
+}
+
+#navItems{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1.2rem;
+}
+
+.hoverLink{
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.hoverLink:hover{
+    color: var(--accent-color);
+    
+}
+
+.primaryButton{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 600;
+    color: white !important;
+    padding: 0.6rem 1.4rem;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+.primaryButton:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.secondaryButton{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 600;
+    color: var(--primary-text-color) !important;
+    padding: 0.6rem 1.4rem;
+    transition: 0.2s ease-out;
+}
+
+.secondaryButton:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+
+.nav_toggle{
+    display: none;
+}
+
+
+/* navBar end  */
+
+main{
+    padding: 2rem 0;
+    background-color: #ffffff;
+    background-image: linear-gradient(19deg, #ffffff 0%, #f5e8e7 26%, #ebe7f7 49%, #ffffff 63%, #ffffff 89%);  
+}
+
+
+/* hero section start */
+
+.heroSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: var(--padding--NavBar); 
+    
+}
+
+.left{
+    width: 40vw;
+    
+}
+.left h1{
+    margin-top: 1.2rem;
+    font-size: 3.8rem !important;
+}
+
+.heroSection .left a{
+    margin-top: 1.2rem;
+}
+
+
+.right img{
+    width: 25rem;
+    
+}
+
+.heroSection .left span{
+    color: #FF735C;
+}
+
+/* hero section end  */
+
+/* company section start  */
+
+.companyText p{
+   text-align: center;
+   margin-block: 1.8rem;
+   color: var(--primary-text-color);
+}
+
+.logos{
+    overflow: hidden;
+    display: flex;
+
+    justify-content: space-between;
+    padding: var(--padding--NavBar);
+    flex-wrap: wrap;
+    gap: 1.6rem;
+
+}
+
+.logo{
+    height: 80px;
+}
+
+/* Features Section */
+
+.features-section{
+    padding: var(--padding--NavBar);
+    padding: 6rem 8rem;
+       
+}
+
+.featuresHeading{
+    text-align: center;
+    width: 60%;
+    gap: 0.5rem;
+    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4.5rem;
+}
+
+.featuresHeading h2{
+    font-size: 3rem;
+    color: var(--accent-color-dark);
+    font-weight: 900;
+   
+}
+
+.featuresHeading p {
+
+    line-height: 50px;
+    margin-bottom: 1.2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-text-color);
+}
+
+.featuresArea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2.5rem;
+    margin-top: 1.2rem;
+    
+}
+
+.featuresArea .card{
+   
+    width: 23.7rem;
+    height: 22rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1.2rem;
+   /* width: 30%; */
+   text-align: center;
+   align-items: center;
+   background-color: #ffffff;
+   padding: 3rem;
+   border-radius: 10px;
+
+   transition: 0.3s ease-in-out;
+
+}
+
+.featuresArea  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+} 
+
+
+.featuresArea .card p{
+  font-size: 1.1rem;
+}
+
+.card_img{
+    width: 64px;
+    height: 62px;
+    padding: 1rem;
+    border-radius: 50%;
+
+}
+
+/* certificate section */
+.certificate_Section{
+
+    display: flex;
+    padding: 5rem 8rem;
+    /* background-color: #FF735C;     */
+    /* height: 30rem; */
+ 
+    background-color: #fff4f2;
+    background-image: linear-gradient(62deg, #fff4f2 0%, #f7f4f9 100%);
+    
+    
+    margin-bottom: 4rem;
+
+}
+.certificate{
+
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+
+}
+.certificate_Left{
+    width: 70%;
+    /* background-color: #a8daed; */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+.certificate_heading h3{
+    font-size: 2.5rem;
+    color:black;
+    line-height: 1.5;
+    font-weight: 900;
+}
+.certificate_subText{
+    width: 80%;
+    font-size: 1.2rem;
+    color: var(--secondary-text-color);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.certificate_right{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+  
+    /* background-color: red; */
+}
+.certificate_right img{
+    width: 20rem;
+  
+    border-radius: 5px;
+    opacity: 8;
+}
+
+/*  Discord Section*/
+
+.DiscordSection{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: var(--padding--NavBar); 
+}
+
+.Discord{
+    display: flex;
+
+    background-color:#2B2F35;
+ 
+    
+    border-radius: 20px;
+    padding: 1.2rem;
+    gap: 3rem;
+
+}
+
+
+.Discord_Text_Side{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 60%;
+}
+
+.Discord_Text_Side .Heading h3{
+    font-size: 2.5rem;
+    color: #ffffff;
+    line-height: 1.5;
+    font-weight: 800;
+}
+
+.Discord_Text_Side .subText p{
+    width: 80%;
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: 500;
+  /* margin: 1rem 0; */
+    
+}
+
+
+
+.Discord_imgage{
+    display: flex;
+
+    width: 40%;
+   
+}
+.Discord_imgage img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 20px; */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+
+
+/* Testimonials */
+
+/* Footer */
+
+footer{
+
+    background-color: #24262b;
+
+    padding: 3rem 0;
+}
+
+.footer_box{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: var(--padding--NavBar);
+}
+
+.footer_main{
+    display: flex;
+    margin: 1rem 0;
+}
+.footer_col{
+    display: flex;   
+    width: 25%;
+    flex-direction: column;
+}
+.footer_colHead{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    gap: 0.8rem;
+    flex-direction: column;
+}
+
+.footer_colHead h2 {
+    
+    color: #ffffff;
+}
+
+.footer_colHead p{
+    width: 70%;
+    color: #bbbbbb;
+    
+    
+}
+
+.footer_col p{
+    color: #ffffff;
+    font-weight: 500;
+}
+
+
+.footer_col .link_column{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 1rem 0;
+}
+
+.footer_col p{
+    
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    position: relative;
+
+}
+
+.footer_col p::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    width: 50px;
+}
+
+.footer_col .link_column a{
+    
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+
+.footer_col .link_column a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+
+.footer_col .social_links{
+    margin-top: 1.2rem;
+    
+}
+
+
+.footer_col .social_links a{
+
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+
+}
+
+.footer_col .social_links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.subfooter{
+    color: #ffffff;
+    margin-top:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+
+
+@media screen and (max-width:1335px){
+
+    .nav_toggle{
+        display: block;
+        font-size: 2.5rem;
+        margin-left: 1.2rem;
+        color: var(--primary-text-color);
+    }
+
+    /* navbar */
+
+
+    #navItems{
+        flex-direction: column;
+        position: absolute;
+        /* background-color: #F1E8EE; */
+
+        background-color: #f9edeb;
+        background-image: linear-gradient(19deg, #f9edeb 0%, #f7f6fc 100%);
+
+
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block:1.2rem ;
+        
+        transition: 0.2s ease-in-out;
+
+    }
+
+    #navItems.active{
+        left: 0;
+    } 
+  
+    .featuresArea .card{
+        width: 40%;
+        
+    }
+
+    .featuresArea {
+       justify-content: space-evenly;
+        
+    }
+
+
+    .certificate{
+        flex-direction: column;
+    }
+    .certificate_Left{
+        width: 100%;
+        text-align: center;
+    }
+    .certificate_subText{
+        width: 100%;
+    }
+
+    .certificate_right{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .Discord{
+        flex-direction: column;
+    }
+
+    .Discord_Text_Side{
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+       text-align: center;
+    }
+
+    .Discord_Text_Side .subText p{
+
+      width: 100%;
+
+
+    }
+    .Discord_Text_Side .subText{
+        padding: 0 6rem;
+    }
+ 
+    .Discord_imgage{
+      margin: auto;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1173px){
+
+    :root{
+
+        --padding--NavBar: 0 6rem;
+    }    
+
+    .heroSection{
+        flex-direction: column;
+    }
+    .left .btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .left .btn a{
+        width: 100%;
+        text-align: center;
+    }
+    .left{
+        width: 100%;
+        
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+   
+    }
+    
+}
+
+@media screen and (max-width:1075px) {
+    .featuresArea .card{
+        width: 23.7rem;
+        
+    }
+
+    .footer_colHead{
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:850px) {
+    
+  .footer_main{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .footer_colHead {
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .footer_colHead p{
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .footer_col{
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  
+  .footer_colHead{
+    width: 100%;
+    /* background-color: #2294ed; */
+}
+
+.footer_col {
+    /* background-color: rgb(91, 61, 7); */
+    width: 50%;
+} 
+
+.footer_col .link_column{
+    /* background-color: rgb(205, 233, 150); */
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_main #col{
+    width: 100%;
+
+}
+
+.footer_col .social_links{
+    /* background-color: pink; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.subfooter{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+}
+
+@media screen and (max-width:650px) {
+
+    :root{
+
+        --padding--NavBar: 0 3rem;
+    }   
+
+    .nav_toggle{
+        margin-left: 10px;
+    }
+
+  
+    main{
+        padding: 0;
+    }
+    .heroSection{
+        padding: 0 3rem;
+    }
+    .companyText p{
+        padding: 3rem;
+    }
+    .logos{
+        padding: 3rem;
+    }
+    .featuresHeading{
+        width: 100%;
+    }
+    .featuresArea .card{
+        width: 23.7rem;
+        height: fit-content;
+        
+    }
+    .features-section{
+        padding: 3rem;
+    }
+    .certificate_Section{
+        padding: 3rem;
+    }
+
+    .certificate_Left  .certificate_right{
+
+        width: 100%;
+        height: fit-content;
+
+    }
+
+    .DiscordSection{
+        padding: 3rem;
+        
+    }
+
+    .Discord_Text_Side .Discord_imgage{
+     
+        width: 100%;
+        height: fit-content;        
+    }
+
+
+}
+
+@media screen and (max-width:400px) {
+
+
+    
+    .navContainer{
+        padding: 2rem;
+        
+    }
+
+    #navList li h2{
+        font-size: 2rem;
+    }
+
+    .DiscordSection{
+        padding: 1rem;
+        width: fit-content;
+    }
+
+    .companyText p{
+        padding: 1rem;
+    }
+
+    .logos{
+        padding: 1rem;
+    }
+
+    .features-section{
+        padding: 1rem;
+    }
+    .certificate_Section{
+        padding: 1rem;
+    }
+
+    .left h1{
+        margin-top: 1.2rem;
+        font-size: 3rem !important;
+    }
+
+    .right img{
+        width: 20rem;
+        
+    }
+
+    .logos{
+        justify-content: center;
+        gap: 1.2rem;
+    
+    }
+    
+    .logo{
+        height: 70px;
+    }
+
+    .featuresHeading h2{
+        font-size: 2.3rem;
+        
+    }   
+
+    .featuresHeading p {
+    
+        font-size: 2.2rem;
+    
+    }
+
+    .featuresArea .card{
+        width: 16rem;
+        
+    }
+    .features-section{
+        margin-bottom: 1rem;
+    }
+
+
+    .certificate_heading h3{
+        font-size: 2rem;
+  
+    }
+    .certificate_subText{
+ 
+        font-size: 0.8rem;
+  
+    }
+    
+  
+    .certificate_right img{
+        width: 16rem;
+
+    }
+
+    .DiscordSection{
+      margin: auto;
+    }
+
+    .Discord{
+        width: 16rem;
+    }
+
+
+    .Discord_Text_Side .Heading h3{
+        font-size: 2rem;
+    }
+
+    .Discord_Text_Side .subText p{
+    
+    font-size: 1.2rem;
+    
+        
+    }
+
+    .Discord_Text_Side .subText{
+    
+        padding: 0 1rem;
+        
+    }
+
+    .Discord_imgage{
+        
+       width: 100%;
+       margin-bottom: 1.2rem;
+
+    }
+
+    .Discord_imgage img{
+        width: 100%;
+    }
+
+    .nav_toggle{
+    
+        font-size: 2rem;
+    
+    }
+
+    .footer_box{
+        padding: 1rem;
+    }
+   
+
+
+
+
+}
+
+
