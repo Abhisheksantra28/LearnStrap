@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -341,6 +342,8 @@ main {
   align-items: center;
   gap: 3rem;
   padding: var(--padding--NavBar);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .Discord {
