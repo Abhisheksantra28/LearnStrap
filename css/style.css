@@ -510,6 +510,16 @@ footer {
   align-items: center;
 }
 
+.footer_Line {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.footer_Line hr{
+  width: 80%;
+}
+
 @media screen and (max-width: 1335px) {
   .nav_toggle {
     display: block;
