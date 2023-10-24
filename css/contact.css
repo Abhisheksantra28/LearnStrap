@@ -1,94 +1,94 @@
 /* Import Google font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
-    --primary-text-color: #183b56;
-    --secondary-text-color: #577592;
-    --accent-color: #2294ed;
-    --accent-color-dark: #1d69a3;
-    --padding--inline--section: 1.2rem;
-    --padding--NavBar: 0 8rem;
-  }
-body{
+  --primary-text-color: #183b56;
+  --secondary-text-color: #577592;
+  --accent-color: #2294ed;
+  --accent-color-dark: #1d69a3;
+  --padding--inline--section: 1.2rem;
+  --padding--NavBar: 0 8rem;
+}
+body {
   min-height: 100vh;
   width: 100%;
-  background-color: #FBFAFD;
+  background-color: #fbfafd;
   background-image: linear-gradient(90deg, #fdfafb 50%, #f3c7cf 100%);
-  
 }
 
 .primaryButton {
-    background-color: var(--accent-color);
-    border-radius: 6px;
-    font-weight: 600;
-    color: white !important;
-    padding: 0.6rem 1.4rem;
-    box-shadow: 0 0 2px var(--secondary-text-color);
-    transition: 0.2s ease-out;
-  }
-  .primaryButton:hover {
-    background-color: var(--accent-color-dark);
-  }
-.container{
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  font-weight: 600;
+  color: white !important;
+  padding: 0.6rem 1.4rem;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+}
+.primaryButton:hover {
+  background-color: var(--accent-color-dark);
+}
+.container {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   max-width: 430px;
   width: 100%;
   background: #fff;
   border-radius: 7px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-.container .registration{
+.container .registration {
   display: none;
 }
-#check:checked ~ .registration{
+#check:checked ~ .registration {
   display: block;
 }
-#check:checked ~ .login{
+#check:checked ~ .login {
   display: none;
 }
-#check{
+#check {
   display: none;
 }
-.container .form{
+.container .form {
   padding: 2rem;
 }
-.form header{
+.form header {
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
   margin-bottom: 1.5rem;
 }
- .form input{
-   height: 60px;
-   width: 100%;
-   padding: 0 15px;
-   font-size: 17px;
-   margin-bottom: 1.3rem;
-   border: 1px solid #ddd;
-   border-radius: 6px;
-   outline: none;
- }
- .form input:focus{
-   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
- }
-.form a{
+.form input {
+  height: 60px;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 17px;
+  margin-bottom: 1.3rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+.form input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+.form a {
   font-size: 16px;
   color: var(--accent-color);
   text-decoration: none;
 }
-.form a:hover{
+.form a:hover {
   text-decoration: underline;
 }
-.form input.button{
+.form input.button {
   color: #fff;
   background: var(--accent-color);
   font-size: 1.2rem;
@@ -98,17 +98,17 @@ body{
   cursor: pointer;
   transition: 0.4s;
 }
-.form input.button:hover{
+.form input.button:hover {
   background: var(--primary-text-color);
 }
-.signup{
+.signup {
   font-size: 17px;
   text-align: center;
 }
-.signup label{
+.signup label {
   color: var(--accent-color);
   cursor: pointer;
 }
-.signup label:hover{
+.signup label:hover {
   text-decoration: underline;
 }
