@@ -22,6 +22,7 @@ To run LearnStrap locally, simply open the `index.html` file in your preferred w
 ```bash
 # Example:
 open index.html
+```
 
 
 
