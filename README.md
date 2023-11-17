@@ -38,6 +38,14 @@ We welcome contributions to improve LearnStrap. If you'd like to contribute, ple
 3. Make your changes and submit a pull request.
 
 
+## Contact
+For any inquiries or feedback, please contact Abhishek Santra at abhisheksantra28@gmail.com.
+
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
 
 
 
