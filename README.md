@@ -23,3 +23,16 @@ To run LearnStrap locally, simply open the `index.html` file in your preferred w
 # Example:
 open index.html
 
+
+## Usage
+LearnStrap is intended for educational purposes. Explore the various materials available on the website to enhance your understanding of HTML, CSS, and JavaScript.
+
+
+## Contributing
+
+We welcome contributions to improve LearnStrap. If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and submit a pull request.
+
