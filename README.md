@@ -23,7 +23,6 @@ To run LearnStrap locally, simply open the `index.html` file in your preferred w
 # Example:
 open index.html
 
-exit
 
 
 
